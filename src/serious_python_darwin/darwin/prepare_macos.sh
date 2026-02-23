@@ -7,7 +7,7 @@ if [ ! -d "$dist" ]; then
     mkdir -p $dist
 
     python_macos_dist_file="python-macos-dart-$python_version.tar.gz"
-    python_macos_dist_url="https://github.com/cfms-dev/python-build/releases/download/v$python_version/$python_macos_dist_file"
+    python_macos_dist_url="https://github.com/flet-dev/python-build/releases/download/v$python_version/$python_macos_dist_file"
 
     # download macos dist
     curl -LO $python_macos_dist_url

@@ -18,7 +18,7 @@ cmake_policy(SET CMP0063 NEW)
 set(PLUGIN_NAME "serious_python_windows_plugin")
 
 set(PYTHON_PACKAGE ${CMAKE_BINARY_DIR}/python)
-set(PYTHON_URL "https://github.com/cfms-dev/python-build/releases/download/v3.14/python-windows-for-dart-3.14.zip")
+set(PYTHON_URL "https://github.com/flet-dev/python-build/releases/download/v3.14/python-windows-for-dart-3.14.zip")
 set(PYTHON_FILE ${CMAKE_BINARY_DIR}/python-windows-for-dart.zip)
 if (NOT EXISTS ${PYTHON_FILE})
   file(DOWNLOAD ${PYTHON_URL} ${PYTHON_FILE})

@@ -17,7 +17,7 @@ project(${PROJECT_NAME} LANGUAGES CXX)
 set(PLUGIN_NAME "serious_python_linux_plugin")
 
 set(PYTHON_PACKAGE ${CMAKE_BINARY_DIR}/python)
-set(PYTHON_URL https://github.com/cfms-dev/python-build/releases/download/v${PYTHON_VERSION}/python-linux-dart-${PYTHON_VERSION}-${PYTHON_ARCH}.tar.gz)
+set(PYTHON_URL https://github.com/flet-dev/python-build/releases/download/v${PYTHON_VERSION}/python-linux-dart-${PYTHON_VERSION}-${PYTHON_ARCH}.tar.gz)
 set(PYTHON_FILE ${CMAKE_BINARY_DIR}/python-linux-dart-${PYTHON_VERSION}-${PYTHON_ARCH}.tar.gz)
 if (NOT EXISTS ${PYTHON_FILE})
   file(DOWNLOAD ${PYTHON_URL} ${PYTHON_FILE})
