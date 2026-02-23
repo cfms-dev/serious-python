@@ -16,10 +16,9 @@ headers:
   entry-points:
     - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\Python.h"
   include-directives:
-    
-    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\*"
-    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\internal/*"
-    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\cpython/*"
+    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\**"
+    # - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\internal/*"
+    # - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\cpython/*"
     
 name: "CPython"
 compiler-opts: 
