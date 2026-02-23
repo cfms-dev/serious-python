@@ -48,7 +48,7 @@ class SeriousPythonAndroid extends SeriousPythonPlatform {
       spDebug("Unable to load libpyjni.so library: $e");
     }
 
-    const pythonSharedLib = "libpython3.12.so";
+    const pythonSharedLib = "libpython3.14.so";
 
     String? getPythonFullVersion() {
       try {
