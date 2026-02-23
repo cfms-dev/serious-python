@@ -14,14 +14,22 @@ globals:
     "^class (\\w+) extends ffi.Union": "final class $1 extends ffi.Union"
 headers:
   entry-points:
-    - "/Users/feodor/projects/flet-dev/python-mobile/install/android/arm64-v8a/python-3.14/include/python3.14/Python.h"
+    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\Python.h"
   include-directives:
-    - "/Users/feodor/projects/flet-dev/python-mobile/install/android/arm64-v8a/python-3.14/include/python3.14/*"
-    - "/Users/feodor/projects/flet-dev/python-mobile/install/android/arm64-v8a/python-3.14/include/python3.14/internal/*"
-    - "/Users/feodor/projects/flet-dev/python-mobile/install/android/arm64-v8a/python-3.14/include/python3.14/cpython/*"
+    
+    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\*"
+    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\internal/*"
+    - "C:\\Users\\crp9472\\Downloads\\py314\\install\\android\\arm64-v8a\\python-3.14.3\\include\\python3.14\\cpython/*"
+    
 name: "CPython"
-llvm-path:
-  - /opt/homebrew/opt/llvm
+compiler-opts: 
+- "--target=aarch64-linux-android21"
+- "-IC:/Users/crp9472/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/lib/clang/19/include"
+- "-IC:/Users/crp9472/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/aarch64-linux-android"
+# - "-IC:/Users/crp9472/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/sys"
+- "--sysroot=C:/Users/crp9472/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot"
+# llvm-path:
+#   - /opt/homebrew/opt/llvm
 #compiler-opts: "-I/usr/local/opt/llvm/lib/clang/10.0.0/include/ -I/usr/local/Frameworks/Python.framework/Versions/3.8/include/python3.8/"
 description: "Bindings to Python C interface\nignore_for_file: unused_field, unused_element\n"
 #array-workaround: true
