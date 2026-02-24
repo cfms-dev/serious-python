@@ -18,8 +18,8 @@ const mobilePyPiUrl = "https://pypi.flet.dev";
 const pyodideRootUrl = "https://cdn.jsdelivr.net/pyodide/v0.27.7/full";
 const pyodideLockFile = "pyodide-lock.json";
 
-const buildPythonVersion = "3.14.2";
-const buildPythonReleaseDate = "20251209";
+const buildPythonVersion = "3.14.3";
+const buildPythonReleaseDate = "20260203";
 const defaultSitePackagesDir = "__pypackages__";
 const sitePackagesEnvironmentVariable = "SERIOUS_PYTHON_SITE_PACKAGES";
 const flutterPackagesFlutterEnvironmentVariable =
@@ -359,7 +359,7 @@ class PackageCommand extends Command {
               '-m',
               'pip',
               'install',
-              // '--pre',
+              '--pre',
               '--upgrade',
               ...pipArgs,
               '--target',
